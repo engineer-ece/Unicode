@@ -23,7 +23,7 @@
     
     for(wchar_t a = 0x2200 ; a <= 0x22ff ; a++){
       _setmode(_fileno(stdout), 0x00020000);
-      wprintf(L"%c \n",a);
+      wprintf(L"%04X %c \n",a,a);
     }
 }
 ```
