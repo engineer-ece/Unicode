@@ -8,6 +8,7 @@
 
 ```cpp
   #include <iostream>
+  #include <iostream>
   #include <fcntl.h>
   #include <io.h>
   #include <stdio.h>
@@ -19,6 +20,11 @@
     _setmode(_fileno(stdout), 0x00020000); // _O_U16TEXT
     wchar_t w = 0x222c;
     wprintf(L"hex: %04X char: %c",w,w);
+    
+    for(wchar_t a = 0x2200 ; a <= 0x22ff ; a++){
+      _setmode(_fileno(stdout), 0x00020000);
+      wprintf(L"%c \n",a);
+    }
 }
 ```
 
