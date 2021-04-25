@@ -1,5 +1,9 @@
 # Unicode
  
+
+[list of unicode](https://www.ssec.wisc.edu/~tomw/java/unicode.html#x2200)
+
+
 ###  To View unicode characters in c++ 
 
 ```cpp
