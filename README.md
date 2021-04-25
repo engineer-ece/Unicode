@@ -8,7 +8,6 @@
 
 ```cpp
   #include <iostream>
-  #include <iostream>
   #include <fcntl.h>
   #include <io.h>
   #include <stdio.h>
