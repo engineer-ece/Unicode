@@ -34,3 +34,25 @@ print(i.name('\u222b'))
 
    
 ```
+
+### To View unicode charaters in dart
+
+```dart 
+
+ void main(){
+   String x = '\u222b';
+   print("U+222b dec = ${x} => ${x.codeUnits}");
+
+   Runes a = new Runes('\u{1f605}');
+   print(""+new String.fromCharCodes(a));
+   print(x.codeUnits);
+   
+  
+
+  "\u{1f605}".runes.forEach((int a) { 
+    var c = new String.fromCharCode(a);
+    print(c);
+  });
+}
+
+```
