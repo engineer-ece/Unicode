@@ -21,8 +21,7 @@
     wprintf(L"hex: %04X char: %c",w,w);
     
     for(wchar_t a = 0x2200 ; a <= 0x22ff ; a++){
-      _setmode(_fileno(stdout), 0x00020000);
-      wprintf(L"%04X %c \n",a,a);
+      wprintf(L"0x%04X  %c \n",a,a);
     }
 }
 ```
