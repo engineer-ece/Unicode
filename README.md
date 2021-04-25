@@ -20,3 +20,17 @@
     wcout << L"Integral Symbol = \x222b\n";
 }
 ```
+-----
+
+###  To View unicode characters in python
+
+```python
+ 
+import unicodedata as i
+print('\u222b')
+ord('\u222b')
+print('\U0001f605') # you get smile emoji'😅'
+print(i.name('\u222b'))
+
+   
+```
